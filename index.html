@@ -15,6 +15,34 @@
 
 <body>
 
+
+         <!--week2 navbar --><!-- after adding css to styles we removed bg-primary in <nav ....at before fixed-rop>-->
+
+        <nav class="navbar navbar-dark navbar-expand-sm  fixed-top"><!--1-create navigtn bar 2.navigation to be dark-color with dark background 3.for small ,extr-small screns navbar will become a toggle-able navbar-->
+            <div class="container">
+                <!--step 2- add buttons <div> <ul>step1 lovi in btw this div </div>-->
+                <button class="navbar-toggler" type="button" 
+                            data-toggle="collapse" data-target="#Navbar">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- step2 -->
+              <a class="navbar-brand mr-auto" href="#">Ristorante Con Fusion</a>
+              <!-- step2 placed <ul> btween <div> tags-->
+              <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav mr-auto"><!--navbar-nav allows below links in navbar-->
+                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li><!--nav-link allows links-->
+                        <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                        <li class="nav-item "><a class="nav-link" href="#">Menu</a></li>
+                        <li class="nav-item "><a class="nav-link" href="./contactus.html">Contact</a></li>
+                      </ul>
+                    
+              </div>
+                <!--step2 placed ul btw div-->
+            </div>
+        
+          </nav> 
+        <!--week2 navbar-->
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -38,6 +66,10 @@
                 <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
             </div>
         </div>
+
+
+
+   
 
 
         <div  class="row row-content align-items-center">
@@ -69,14 +101,14 @@
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-7 col-sm-5">
                     <h5>Our Address</h5>
-                    <address class="address">
+                    <address >
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
 		              HONG KONG<br>

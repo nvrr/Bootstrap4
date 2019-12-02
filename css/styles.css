@@ -42,6 +42,11 @@ body{
 }
 /* week2*/
 /*  week2 assignment  */
-
-
-
+/*week3------1@----nav tabs and pills*/
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+/*           week3 1@----------------

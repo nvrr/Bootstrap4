@@ -48,8 +48,7 @@
                         <a data-toggle="modal" data-target="#loginModal">
                             <span class="fa fa-sign-in"> Login</span>
                         </a>
-                    </span>
-              </div>
+                    </span>              </div>
                 <!--step2 placed ul btw div-->
             </div>
         
@@ -63,14 +62,15 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 class="modal-title">Login </h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <button type="button" class="close" data-dismiss="modal" >&times;</button>
                         </div>
                         <div class="modal-body">
                             <form>
                                 <div class="form-row">
                                     <div class="form-group col-sm-4">
                                             <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                                            <input type="email" class="form-control form-control-sm mr-1" 
+                                                   id="exampleInputEmail3" placeholder="Enter email">
                                     </div>
                                     <div class="form-group col-sm-4">
                                         <label class="sr-only" for="exampleInputPassword3">Password</label>
@@ -85,7 +85,8 @@
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" 
+                                            data-dismiss="modal">Cancel</button>
                                     <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
                                 </div>
                             </form>
@@ -94,7 +95,84 @@
                 </div>
             </div>
          <!-------------2@-------------------------------------------------WEEK3----------MODELS----------->
-    <header class="jumbotron">
+   
+
+         <!-----------------WEEK3 ASSIGNMENT-----RESERVEMODAL-->
+          
+
+<div id="reserveModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Reserve a Table</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <form>
+                        <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Number of Guests</label>
+                                  
+                                <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="guest1" name="guest" class="custom-control-input">
+                                        <label class="custom-control-label" for="guest1">1</label>
+                                      </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="guest2" name="guest" class="custom-control-input">
+                                        <label class="custom-control-label" for="guest2">2</label>
+                                      </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="guest3" name="guest" class="custom-control-input">
+                                        <label class="custom-control-label" for="guest3">3</label>
+                                      </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="guest4" name="guest" class="custom-control-input">
+                                        <label class="custom-control-label" for="guest4">4</label>
+                                      </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="guest5" name="guest" class="custom-control-input">
+                                        <label class="custom-control-label" for="guest5">5</label>
+                                      </div>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="guest6" name="guest" class="custom-control-input">
+                                            <label class="custom-control-label" for="guest6">6</label>
+                                      </div>
+                     </div>
+                     <div class="form-group row">
+                         <label class="col-12 col-sm-3 col-form-label">Section</label>
+                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-success active">
+                                 <input type="radio" name="options" id="option1"  autocomplete="off" checked >Non-smoking</label>
+                            <label class="btn btn-danger">
+                                <input type="radio" name="options" id="option2" autocomplete="off">Smoking</label>
+                         </div>
+                     </div>
+       
+                    <div class="form-group row">
+                        
+                                <label class="col-10 col-sm-3  col-form-label">Date and Time</label>
+                                <div class="">
+                                    <input class="col-5 col-sm-3 col-md-3 " placeholder="Date">
+                                    <input class="col-5 col-sm-3 col-md-3 " placeholder="Time">
+                                </div>
+                        
+                    </div>          
+                        <div class="form-group ">
+                                <div class="offset-1 offset-md-3 ">
+                                        <button type="cancel" class="btn btn-secondary" data-dismiss="true">Cancel</button>
+                                        <button type="submit" class="btn btn-primary" >Reserve</button>
+                                </div>
+                        </div>
+                        
+                </form>
+            </div>
+        </div>
+    </div> 
+</div>
+
+
+         <!-----------------/////////////////////////WEEK3 ASSIGNMENT-----RESERVEMODAL-->
+         <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
@@ -112,10 +190,10 @@
                 <!---------------week2 assignment------------------->
                 <div class="col=12 col-sm align-self-center">
                  <!--------WEEK3 ---2@-----TOOLPITS--betwn--- class="btn btn-warning"-----href="-->
-                    <a role="button" class="btn btn-block nav-link btn-warning "  
-                    data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
-                    data-placement="bottom"
-                    href="#Reservetable">Reserve</a>
+                    <button role="button" class="btn btn-block nav-link btn-warning " 
+                    data-toggle="modal" data-target="#reserveModal"> 
+                    <span data-toggle="tooltip" data-html="true"  title="Or Call us at <br><strong>+852 12345678</strong>"
+                    data-placement="bottom">Reserve</span></button>
                      
                  <!--------------------/WEEK3------------------2@-------------------TOOLPITS------------->
                 </div>
@@ -128,7 +206,7 @@
         <!---WEEK3-----------3@----------CAROUSEL---------------->
        <div class="row row-content">
            <div class="col">
-                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel" data-pause="hover">
                      <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <img class="d-block img-fluid" src="img/uthappizza.png" alt="Uthappizza">
@@ -282,10 +360,10 @@
                 <div class="card" >
                     <h3 class="card-header bg-warning text-white" >Reserve a Table</h3>
                     <div class="card-body">
-                        <form >
+                        <form>
                                 <div class="form-group row">
-                                        <label class="col-md-3 col-form-label">Number of Guests</label>
-                                          
+                                        <label class="col-10 col-sm-10 col-md-3 col-form-label">Number of Guests</label>
+                                        
                                         <div class="custom-control custom-radio custom-control-inline">
                                                 <input type="radio" id="guest1" name="guest" class="custom-control-input">
                                                 <label class="custom-control-label" for="guest1">1</label>
@@ -310,15 +388,18 @@
                                                     <input type="radio" id="guest6" name="guest" class="custom-control-input">
                                                     <label class="custom-control-label" for="guest6">6</label>
                                               </div>
+                                        
                              </div>
                
-                            <div class="form-group row">
-                                        <label class=" col-md-3 col-form-label">Date and Time</label>
-                                        <div>
-                                            <input class="col-5 col-md-4" placeholder="Date">
-                                            <input class="col-5 col-md-4" placeholder="Time">
-                                        </div>
-                        </div>          
+                            <div class="  form-group row">
+                                
+                                        <label class="ohml col-10 col-sm-3  col-form-label">Date and Time</label>
+                                    <div class="ohmi">  
+                                            <input class="col-5 col-sm-3"  placeholder="Date">
+                                            <input class="col-5 col-sm-3"  placeholder="Time">
+                                    </div>
+                            
+                            </div>       
                                 <div class="form-group row">
                                         <div class="offset-1 offset-md-3 ">
                                                 <button type="submit" class="btn btn-primary" >Reserve</button>
@@ -337,7 +418,7 @@
     
     
     
-    
+
     
 
 

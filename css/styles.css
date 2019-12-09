@@ -66,7 +66,15 @@ body{
     min-height: 300px;
 }
 /* -------////week3 -----3@------CAROUSEL----------*/
-/*--------------------week3   ASSIGNMENT----------------*
+/*--------------------week3   ASSIGNMENT----------------*/
+.ohmm {
+    align-items: center;
+}
+.ohm {
+    align-items: center;
+    padding-right: 55px;
+
+}
 
 
 /*---------week3 assignment-----------*/

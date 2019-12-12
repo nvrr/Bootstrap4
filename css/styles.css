@@ -66,10 +66,10 @@ body{
     min-height: 300px;
 }
 /* -------////week3 -----3@------CAROUSEL----------*/
-/*--------------------week3   ASSIGNMENT----------------*/
+/*--------------------week3   ASSIGNMENT----------------
 .ohmm {
     
-    align-items: center;
+    
     padding-right: 90px;
 
 }
@@ -77,12 +77,12 @@ body{
     display: inline-flex;
 }
 .ohm {
-    align-items: center;
+    
     padding-right: 90px;
 
 }
 
-/*---------week3 assignment-----------*/
+---------week3 assignment-----------*/
 /*----------------WEEK4-------------------------------------*/
 
 #carouselButton {
@@ -91,4 +91,4 @@ body{
     bottom: 0px;
     z-index: 1;
 }
-/*----------------WEEK4-------------------------------------*/
+/*---------------WEEK4-------------------------------------*/

@@ -92,3 +92,10 @@ body{
     z-index: 1;
 }
 /*---------------WEEK4-------------------------------------*/
+/*----week4 assigmnmrnt-*/
+.modal-header {
+    background-color: #512DA8;
+}
+.modal-body {
+    background-color: #D1C4E9;
+}

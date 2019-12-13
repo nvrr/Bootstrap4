@@ -45,7 +45,7 @@
                       </ul>
                     <!---week3---modal---->
                     <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal">
+                        <a id="loginButton">
                             <span class="fa fa-sign-in"> Login</span>
                         </a>
                     </span>              </div>
@@ -191,9 +191,10 @@
                 <div class="col=12 col-sm align-self-center">
                  <!--------WEEK3 ---2@-----TOOLPITS--betwn--- class="btn btn-warning"-----href="-->
                     <button role="button" class="btn btn-block nav-link btn-warning " 
-                    data-toggle="modal" data-target="#reserveModal"> 
-                    <span data-toggle="tooltip"  data-html="true"  title="Or Call us at <br><strong>+852 12345678</strong>"
-                    data-placement="bottom">Reserve</span></button>
+                    id="modalButton"> 
+                    <span id="reserveTooltip" data-html="true" data-placement="bottom"
+                    title="Or Call us at <br> <strong>+81 37878327</strong>"
+                    >Reserve</span></button>
                      
                  <!--------------------/WEEK3------------------2@-------------------TOOLPITS------------->
                 </div>
@@ -488,13 +489,13 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <!--------WEEK3-----------2@--------MODELS------------->
+        <!--------WEEK3-----------2@--------MODELS-------------
         <script>
                 $(document).ready(function(){
                     $('[data-toggle="tooltip"]').tooltip();
                 });
             </script>
-        <!-----------------------------WEEK3------------------2@-----models-->
+        !-----------------------------WEEK3------------------2@-----models-->
         <!---------------------------------WEEK4--1-BOOTSTRAP JQUERY--------------
         <script>
                 $(document).ready(function(){
@@ -525,22 +526,29 @@
                         }
             });
                 });
+                
             </script>
         
         <!-------------------------------/////--WEEK4--2-more--BOOTSTRAP JQUERY-------------->
-          <!---------week4 assignment for reserve and log  --  
+          <!---------week4 assignment for reserve and log  --> 
           <script>
                 $(document).ready(function(){
                     $("#modalButton").click(function(){
                        $("#reserveModal").modal('toggle');
                 });
+                $("#loginButton").click(function(){
+                  $("#loginModal").modal('toggle');
+                  });
 
                  $("#modalButton").mouseover(function(){
                        $("#reserveTooltip").tooltip('toggle');
                        
+                       
+
                 });
                 });
         </script>
+
         !---------//////////week4 assignment for reserve and log  -->
     </body>
 

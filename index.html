@@ -509,7 +509,7 @@
                 });
             </script>
         ------------------------------///////////////////WEEK4--1-BOOTSTRAP JQUERY-------------->
-        <!---------------------------------WEEK4--2-more--BOOTSTRAP JQUERY-------------->
+        <!---------------------------------WEEK4--2-more--BOOTSTRAP JQUERY------
         <script>
                 $(document).ready(function(){
                     $("#mycarousel").carousel( { interval: 1000 } );
@@ -526,11 +526,27 @@
                         }
             });
                 });
+
+                $(document).ready(function(){
+                    $("#modalButton").click(function(){
+                       $("#reserveModal").modal('toggle');
+                });
+                $("#loginButton").click(function(){
+                  $("#loginModal").modal('toggle');
+                  });
+
+                 $("#modalButton").mouseover(function(){
+                       $("#reserveTooltip").tooltip('toggle');
+                       
+                       
+
+                });
+                });
                 
             </script>
         
-        <!-------------------------------/////--WEEK4--2-more--BOOTSTRAP JQUERY-------------->
-          <!---------week4 assignment for reserve and log  --> 
+        !-------------------------------/////--WEEK4--2-more--BOOTSTRAP JQUERY-------------->
+          <!---------week4 assignment for reserve and log  -- 
           <script>
                 $(document).ready(function(){
                     $("#modalButton").click(function(){
